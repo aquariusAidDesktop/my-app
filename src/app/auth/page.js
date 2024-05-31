@@ -1,11 +1,17 @@
+"use client"
+
 import Header from "@/components/Header/Header";
 import styles from "./page.module.css"
 import Image from "next/image";
-import { useState } from "react";
+import { useRouter } from "next/navigation";
+
+
 
 
 
 export default function Home() {
+
+  const navigate = useRouter()
 
   return (
     <>
@@ -25,7 +31,7 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.nextButton}>
-              <button onClick={setData(data + 1)} className={styles.button}>Далее</button>
+              <button onClick={() => {navigate.push("/plans")}} className={styles.button}>Далее</button>
             </div>
       
           </div>
