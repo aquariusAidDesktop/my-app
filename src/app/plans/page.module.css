@@ -1,0 +1,34 @@
+.planContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.headerContainer {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.planDushContainer {
+    width: 70%;
+    margin-top: 5vh;
+}
+
+.activePlan {
+    width: 100%;
+    background-color: burlywood;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vh;
+    cursor: pointer;
+}
+
+.createPlan {
+    width: 30%;
+    background-color: bisque;
+}
