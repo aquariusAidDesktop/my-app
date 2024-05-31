@@ -1,9 +1,12 @@
 import Header from "@/components/Header/Header";
 import styles from "./page.module.css"
 import Image from "next/image";
+import { useState } from "react";
+
 
 
 export default function Home() {
+
   return (
     <>
       <Header>
@@ -22,8 +25,9 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.nextButton}>
-              <button className={styles.button}>Далее</button>
+              <button onClick={setData(data + 1)} className={styles.button}>Далее</button>
             </div>
+      
           </div>
         </div>
       </Header>
